@@ -68,4 +68,4 @@ async function readFileJson(path) {
     return parsedToken;
 }
 
-module.exports = { authorize }
+module.exports = { authorize };
