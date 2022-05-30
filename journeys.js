@@ -53,7 +53,6 @@ const fs = require('fs/promises');
                         }
                     });
                     if (tripsPath != "") await fs.writeFile(tripsPath, JSON.stringify(trips));
-                    console.log('JSON written');
                     resolve(trips);
                 } else {
                     console.error('No data found.');

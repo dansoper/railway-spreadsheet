@@ -35,7 +35,6 @@ function getStationCoordsFromSheet(auth, spreadsheetId, range, path = "") {
                     if (path != "") {
                         await fs.writeFile(path, JSON.stringify(stations));
                     }
-                    console.log('JSON written');
                     resolve(stations);
                 } else {
                     console.error('No data found.');
