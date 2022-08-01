@@ -29,7 +29,8 @@ function getStationCoordsFromSheet(auth, spreadsheetId, range, path = "") {
                             long: row[3],
                             name: row[0],
                             code: row[1],
-                            county: row[4]
+                            county: row[6] != null ? row[6] : row[4],
+                            londonBorough: row[6] != null ? row[6] : row[4]
                         });
                     });
                     if (path != "") {
